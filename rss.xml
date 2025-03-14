@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>nttis&#x27; blog</title>
+      <link>https://nttis.github.io/blog</link>
+      <description>Random ramblings</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://nttis.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 14 Mar 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Episode One</title>
+          <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+          <author>nttis</author>
+          <link>https://nttis.github.io/blog/episode-one/</link>
+          <guid>https://nttis.github.io/blog/episode-one/</guid>
+          <description xml:base="https://nttis.github.io/blog/episode-one/">&lt;p&gt;This is the episode in which I make a blog.&lt;&#x2F;p&gt;
+&lt;p&gt;There is no schedule, no professional writing, just random ramblings from
+a random guy on the Internet.  Please do look forward to any future posts!&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
