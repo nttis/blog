@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.classless.blue.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --pico-font-family-sans-serif: "Atkinson Hyperlegible Next", "Noto Sans", "Roboto", sans-serif, system-ui;
+    }
+
+    [data-theme="light"],
+    :root:not([data-theme="dark"]) {
+      --pico-background-color: #dfdfdf;
+      --pico-color: #111;
+    }
+  </style>
+
+  {% block head %}{% endblock %}
+</head>
+
+<body>
+  {% block body %}{% endblock %}
+</body>
+
+</html>

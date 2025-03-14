@@ -1,0 +1,31 @@
+{% extends "genesis.html" %}
+
+{% block body %}
+
+<main style="max-width: 768px;">
+
+  <div>
+    <span>
+      <a rel="alternate" href="{{ get_url(path='rss.xml') }}" title="RSS" type="application/rss+xml">RSS feed</a>
+    </span>
+
+    <span>
+      <a rel="alternate" href="{{ get_url(path='atom.xml') }}" title="Atom" type="application/atom+xml">Atom feed</a>
+    </span>
+  </div>
+
+
+  <h2>Blog posts:</h2>
+
+  {% for page in section.pages %}
+
+  <li>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <span>{{ page.date }}</span>
+  </li>
+
+  {% endfor %}
+</main>
+
+
+{% endblock body %}
