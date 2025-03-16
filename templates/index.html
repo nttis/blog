@@ -21,7 +21,7 @@
 
   <h2>Blog posts:</h2>
 
-  {% for page in section.pages %}
+  {% for page in section.pages | reverse %}
 
   <li>
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
