@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>nttis&#x27; blog</title>
+    <subtitle>Random ramblings</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://nttis.github.io/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://nttis.github.io/blog"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-03-17T00:00:00+00:00</updated>
+    <id>https://nttis.github.io/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Code is awesome</title>
+        <published>2025-03-17T00:00:00+00:00</published>
+        <updated>2025-03-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              nttis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nttis.github.io/blog/code-is-awesome/"/>
+        <id>https://nttis.github.io/blog/code-is-awesome/</id>
+        
+        <content type="html" xml:base="https://nttis.github.io/blog/code-is-awesome/">&lt;p&gt;The more I program, the more I come to &lt;em&gt;greatly&lt;&#x2F;em&gt; appreciate the privilege
+of being able to write code.&lt;&#x2F;p&gt;
+&lt;p&gt;Code is &lt;em&gt;plaintext&lt;&#x2F;em&gt;, readable and comprehensible by humans. They can
+easily be copy-pasted around, shared with the world, archived and saved.&lt;&#x2F;p&gt;
+&lt;p&gt;They can be &lt;em&gt;version controlled&lt;&#x2F;em&gt;. Check source files into &lt;code&gt;git&lt;&#x2F;code&gt; and
+upload them to a remote repository. With a few commands (or a few clicks
+if you use a Git forge), you have the entire history of a project. You
+can view all the changes made over time, by whom, to what, when,
+at your fingertips.&lt;&#x2F;p&gt;
+&lt;p&gt;Because of this, I have been trying to find ways to do as much in &lt;em&gt;code&lt;&#x2F;em&gt;
+as possible. The more things that I can write in plaintext and check into
+&lt;code&gt;git&lt;&#x2F;code&gt;, the better.&lt;&#x2F;p&gt;
+&lt;p&gt;Here are a few things I have found solutions for.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;word-processing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#word-processing&quot; aria-label=&quot;Anchor link for: word-processing&quot;&gt;Word processing&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Office programs are ubiquitous, but not for their convenience
+or featureset or anything. They are ubiquitous only because they are
+&lt;em&gt;necessary&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I want to avoid having to open Microsoft Word or
+&lt;a href=&quot;https:&#x2F;&#x2F;www.libreoffice.org&quot;&gt;LibreOffice&lt;&#x2F;a&gt; as much as possible. &lt;code&gt;.docx&lt;&#x2F;code&gt;
+(and other file formats) files are opaque, binary blobs. I can&#x27;t just
+open them up in a text editor and read their contents.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;just-use-a-md-file&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#just-use-a-md-file&quot; aria-label=&quot;Anchor link for: just-use-a-md-file&quot;&gt;Just use a &lt;code&gt;.md&lt;&#x2F;code&gt; file&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Markdown&quot;&gt;Markdown&lt;&#x2F;a&gt; is simply godly. It&#x27;s
+plaintext that was &lt;em&gt;designed&lt;&#x2F;em&gt; from the start to look great both in
+plaintext form and in processed form. It&#x27;s extremely popular for good
+reasons.&lt;&#x2F;p&gt;
+&lt;p&gt;If you just want to quickly jot down something, just open a new &lt;code&gt;.md&lt;&#x2F;code&gt;
+file and start writing.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;but-the-tables-images-graphs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#but-the-tables-images-graphs&quot; aria-label=&quot;Anchor link for: but-the-tables-images-graphs&quot;&gt;But the tables? Images?? Graphs???&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Right, these are a tad bit too complex for Markdown. Markdown has support
+for tables, but they aren&#x27;t pleasant to write by hand. Graphs are also
+only possible if you are a Great Wizard in the Art of ASCII.&lt;&#x2F;p&gt;
+&lt;p&gt;This is why word processors were born: the need to present complex
+documents. Academic papers, reports, resumés, infographics (no one does
+infographics in Word though, right??), etc.&lt;&#x2F;p&gt;
+&lt;p&gt;When I have absolutely no other choice (which is a situation I haven&#x27;t
+been in so far), I begrudgingly open LibreOffice and start typing up
+a document.&lt;&#x2F;p&gt;
+&lt;p&gt;However, in every other case, I write documents in code.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tex&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#tex&quot; aria-label=&quot;Anchor link for: tex&quot;&gt;TeX&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Donald_Knuth&quot;&gt;Donald Knuth&lt;&#x2F;a&gt; gave the world
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;TeX&quot;&gt;TeX&lt;&#x2F;a&gt; almost 50 years ago. Since then,
+it has been the best thing since sliced bread in academia.&lt;&#x2F;p&gt;
+&lt;p&gt;TeX is &lt;em&gt;powerful&lt;&#x2F;em&gt;. It can do everything a word processor program
+can do and more. The kicker? You write your documents in &lt;em&gt;code&lt;&#x2F;em&gt;, in
+&lt;em&gt;plaintext&lt;&#x2F;em&gt;. A TeX engine then takes care of transforming that code into
+a different form (pdf, docx, etc.), ready for consumption.&lt;&#x2F;p&gt;
+&lt;p&gt;TeX source files are &lt;em&gt;plaintext&lt;&#x2F;em&gt;. If you open them up in Notepad, you
+can immediately read them as-is and understand them. Of course, all
+the formatting and layout options and whatnot will not be available,
+but you can still read the &lt;em&gt;content&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;typst&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#typst&quot; aria-label=&quot;Anchor link for: typst&quot;&gt;Typst&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;typst.app&quot;&gt;Typst&lt;&#x2F;a&gt; is a modern TeX: proper, sane typesetting. And
+I have to say, after using Typst a few times: it does it pretty well. It
+is already capable enough to replace TeX, it&#x27;s just a matter of waiting
+for academia to &lt;em&gt;eventually&lt;&#x2F;em&gt; migrate away from TeX.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;presentations-slides&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#presentations-slides&quot; aria-label=&quot;Anchor link for: presentations-slides&quot;&gt;Presentations, slides&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Presentations are tough to tackle. They have to look pleasant, have to be
+convenient and fast to make, have to look the same on every screen, have
+to be shareable, have to be editable, have to be able to be collaborated
+on by many people.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s no wonder, then, that services like &lt;a href=&quot;https:&#x2F;&#x2F;canva.com&quot;&gt;Canva&lt;&#x2F;a&gt; and
+&lt;a href=&quot;https:&#x2F;&#x2F;doc.google.com&#x2F;presentation&quot;&gt;Google Slides&lt;&#x2F;a&gt; are so popular. After
+all, they meet all the criteria.&lt;&#x2F;p&gt;
+&lt;p&gt;The problem, though, is that the presentations you make aren&#x27;t in
+plaintext. And as far as I can tell, both of these services have no &lt;em&gt;real&lt;&#x2F;em&gt;
+changes history.&lt;&#x2F;p&gt;
+&lt;p&gt;For making slides, I use &lt;a href=&quot;https:&#x2F;&#x2F;revealjs.com&quot;&gt;reveal.js&lt;&#x2F;a&gt;. It&#x27;s a
+JavaScript library that allows you to write your slides in HTML and
+present right in the web browser. It comes with a whole host of features
+that you would expect from PowerPoint and other tools: presenter&#x27;s view,
+multiplexing, animations, transitions, multimedia, etc.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s look at the list:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Slides have to look pleasant. Check.&lt;&#x2F;li&gt;
+&lt;li&gt;Slides have to be fast to make. Check.&lt;&#x2F;li&gt;
+&lt;li&gt;Slides have to look the same everywhere. Check.&lt;&#x2F;li&gt;
+&lt;li&gt;Has to be shareable. Check. It&#x27;s just HTML.&lt;&#x2F;li&gt;
+&lt;li&gt;Has to be editable. Check. It&#x27;s just HTML.&lt;&#x2F;li&gt;
+&lt;li&gt;Has to be collaborateable. Check. It&#x27;s just code.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;There are other solutions too, like &lt;a href=&quot;https:&#x2F;&#x2F;latex-beamer.com&#x2F;&quot;&gt;LaTeX
+Beamer&lt;&#x2F;a&gt;, but I am very happy with reveal.js
+thus far.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;aside-pandoc&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#aside-pandoc&quot; aria-label=&quot;Anchor link for: aside-pandoc&quot;&gt;Aside: &lt;code&gt;pandoc&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;pandoc.org&quot;&gt;pandoc&lt;&#x2F;a&gt; is a godly tool. It can convert to and from
+many document&#x2F;markup formats. If you find yourself needing to create
+a simple &lt;code&gt;.docx&lt;&#x2F;code&gt;, try writing it in Markdown and convert it to &lt;code&gt;.docx&lt;&#x2F;code&gt;
+with &lt;code&gt;pandoc&lt;&#x2F;code&gt; instead. The result is very good.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;video-editing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#video-editing&quot; aria-label=&quot;Anchor link for: video-editing&quot;&gt;Video editing&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This is an extremely difficult problem to solve with code. Video editing
+is inherently a &lt;em&gt;visual&lt;&#x2F;em&gt; task. Writing videos in code sounds borderline
+impossible.&lt;&#x2F;p&gt;
+&lt;p&gt;Still, there is &lt;a href=&quot;https:&#x2F;&#x2F;motioncanvas.io&#x2F;&quot;&gt;Motion Canvas&lt;&#x2F;a&gt;. To quote the website
+verbatim:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A TypeScript library for creating animated videos using the Canvas API.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;The author of Motion Canvas makes his own videos (which are quite complex,
+mind you) in Motion Canvas itself! This proves that the tool is more
+than enough for video editing and compositing.&lt;&#x2F;p&gt;
+&lt;p&gt;An interesting consequence of doing this is that you can offload
+video rendering to the cloud:tm: instead of doing it on your own
+machine. &lt;a href=&quot;https:&#x2F;&#x2F;colab.research.google.com&#x2F;&quot;&gt;Google Colab&lt;&#x2F;a&gt; is a good
+place to look.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;audio-and-3d-modeling&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#audio-and-3d-modeling&quot; aria-label=&quot;Anchor link for: audio-and-3d-modeling&quot;&gt;Audio and 3D modeling&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Unfortunately, these are unsolved problems. There &lt;em&gt;are&lt;&#x2F;em&gt; some programmatic
+CAD programs out there that allows you to model using code, but nothing
+general-purpose like &lt;a href=&quot;https:&#x2F;&#x2F;blender.org&quot;&gt;Blender&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Yes, I know that Blender has a scripting API, but I don&#x27;t think it can
+allow you to do the things I&#x27;m talking about.&lt;&#x2F;p&gt;
+&lt;p&gt;The day a programmer can &quot;write&quot; a human model, a house model, a tree
+model, a sword model, etc. in code is the day the world reaches utopia
+status.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Episode One</title>
+        <published>2025-03-14T00:00:00+00:00</published>
+        <updated>2025-03-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              nttis
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nttis.github.io/blog/episode-one/"/>
+        <id>https://nttis.github.io/blog/episode-one/</id>
+        
+        <content type="html" xml:base="https://nttis.github.io/blog/episode-one/">&lt;p&gt;This is the episode in which I make a blog.&lt;&#x2F;p&gt;
+&lt;p&gt;There is no schedule, no professional writing, just random ramblings from
+a random guy on the Internet.  Please do look forward to any future posts!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
