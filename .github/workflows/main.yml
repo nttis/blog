@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Build and deploy
-        uses: shalzz/zola-deploy-action@master
+        uses: shalzz/zola-deploy-action@c34a7626cd84c9c90499afeb310070ea838a8d1a
         env:
           PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
