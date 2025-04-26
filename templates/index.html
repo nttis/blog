@@ -4,32 +4,80 @@
 
 <title>{{ config.title }}</title>
 
+<style>
+  main {
+    max-width: 768px;
+    margin: auto;
+    padding: 0.5rem;
+  }
+
+  .blog-posts h2 {
+    margin-bottom: 1rem;
+  }
+
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .post-card {
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 0.2rem;
+
+    background-color: #eee;
+    transition: ease 0.2s;
+
+    padding: 0.5rem;
+  }
+
+  .post-card:hover {
+    transform: scale(1.01);
+  }
+
+  .post-card small {
+    margin-bottom: 1rem;
+    display: block;
+  }
+</style>
+
+<style>
+  span a {
+    text-decoration: underline;
+    color: #0000ff;
+  }
+</style>
+
 {% endblock head %}
 
 {% block body %}
+
 <main>
-  <div>
-    <span>
-      <a rel="alternate" href="{{ get_url(path='rss.xml') }}" title="RSS" type="application/rss+xml">RSS feed</a>
-    </span>
+  <span>
+    <a rel="alternate" href="{{ get_url(path='rss.xml') }}" title="RSS" type="application/rss+xml">RSS feed</a>
+  </span>
 
-    <span>
-      <a rel="alternate" href="{{ get_url(path='atom.xml') }}" title="Atom" type="application/atom+xml">Atom feed</a>
-    </span>
-  </div>
+  <span>
+    <a rel="alternate" href="{{ get_url(path='atom.xml') }}" title="Atom" type="application/atom+xml">Atom feed</a>
+  </span>
 
+  <section class="blog-posts">
+    <h2>Blog posts:</h2>
 
-  <h2>Blog posts:</h2>
+    <div class="posts-container">
+      {% for page in section.pages | sort(attribute="date") | reverse %}
 
-  {% for page in section.pages | reverse %}
+      <a class="post-card" href={{ page.permalink }}>
+        <h3>{{ page.title }}</h3>
+        <small>{{ page.date | date(format="%B %d, %Y") }}</small>
 
-  <li>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    <span>{{ page.date }}</span>
-  </li>
+        <p>{{ page.extra.summary }}</p>
+      </a>
 
-  {% endfor %}
+      {% endfor %}
+    </div>
+  </section>
 </main>
-
 
 {% endblock body %}

@@ -4,17 +4,128 @@
 
 <title>{{ page.title }}</title>
 
+<link rel="stylesheet" href="/syntax.css">
+
+<style>
+  * {
+    line-height: 1.8rem;
+  }
+
+  article {
+    padding: 0.5rem;
+    margin: auto;
+    max-width: 768px;
+  }
+
+  article,
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  article header {
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+  }
+
+  blockquote {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 0.5rem;
+
+    border-style: dotted;
+    border-radius: 0.2rem;
+    border-width: thin;
+    border-color: #000;
+  }
+
+  code * {
+    font-family: monospace;
+  }
+
+  p code,
+  li code {
+    font-family: monospace;
+    background-color: #ccc;
+    padding: 0.2rem;
+
+    border-style: dotted;
+    border-radius: 0.2rem;
+    border-width: thin;
+    border-color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #0066ee;
+  }
+
+  ul,
+  menu {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal
+  }
+
+  .footnotes {
+    margin-left: 1rem;
+  }
+</style>
+
+<style>
+  pre {
+    padding: 0.5rem;
+    overflow: auto;
+  }
+
+  /* The line numbers already provide some kind of left/right padding */
+  pre[data-linenos] {
+    padding: 0.5rem;
+  }
+
+  pre table td {
+    padding: 0;
+  }
+
+  /* The line number cells */
+  pre table td:nth-of-type(1) {
+    text-align: center;
+    vertical-align: top;
+    user-select: none;
+  }
+
+  pre mark {
+    /* If you want your highlights to take the full width */
+    display: block;
+    /* The default background colour of a mark is bright yellow */
+    background-color: rgba(254, 252, 232, 0.9);
+  }
+
+  pre table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+</style>
+
 {% endblock head %}
 
 {% block body %}
 
-<main>
-  <p style="margin-bottom: 0;">{{ page.date }}</p>
-  <h1 style="margin-top: 0;">{{ page.title }}</h1>
+<article>
+  <header>
+    <p style="margin-bottom: 0;">{{ page.date | date(format="%B %d, %Y") }}</p>
+    <h1 style="margin-top: 0;">{{ page.title }}</h1>
+  </header>
 
-  <br>
-
-  {{ page.content | safe }}
-</main>
+  <main>
+    {{ page.content | safe }}
+  </main>
+</article>
 
 {% endblock body %}
